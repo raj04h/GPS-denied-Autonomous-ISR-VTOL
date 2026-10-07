@@ -1,0 +1,19 @@
+YOLOv8m Defence
+    → DRONE
+    → TANK
+    → FIGHTER_JET
+    → WARSHIP
+
+RF-DETR
+    → PERSON
+    → CAR
+    → TRUCK
+    → etc.
+
+YOLO26x
+    → FIREARM
+    → EXPLOSIVE
+    → MELEE_WEAPON
+
+gun_dtct
+    → GUN/PISTOL
