@@ -28,3 +28,5 @@ def get_class_id(class_name: str) -> int:
         raise KeyError(f"Unknown ISR class name: {class_name}")
 
     return ISR_CLASS_NAMES[normalized_name]
+
+
