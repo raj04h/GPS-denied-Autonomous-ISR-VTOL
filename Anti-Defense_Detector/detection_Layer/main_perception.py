@@ -26,7 +26,7 @@ INPUT_MODE = "video"  # video, camera, rtsp
 VIDEO_PATH = (  # just remove this
     DETECTOR_PROJECT_DIR
     / "asset"
-    / "drone_testing.mp4"
+    / "car_running.mp4"
 )
 CAMERA_INDEX = 0
 RTSP_URL = "rtsp://<camera-address>/<stream-path>"
@@ -87,11 +87,11 @@ def build_detection_manager() -> DetectionManager:
 
     detectors = {
         "RF-DETR": RFDETRDetector(
-            confidence_threshold=0.40,
+            confidence_threshold=0.10,
         ),
         "YOLOv8m_Defence": VEHICLEDETECTOR(
             weights_path=str(VEHICLE_WEIGHTS),
-            confidence_threshold=0.50,
+            confidence_threshold=0.10,
         ),
         "gun_dtct": GUNDETECTOR(
             weights_path=str(GUN_WEIGHTS),
@@ -104,7 +104,7 @@ def build_detection_manager() -> DetectionManager:
     }
 
     fusion = DetectionFusion(
-        iou_threshold=0.50,
+        iou_threshold=0.10,
         confidence_threshold=0.25,
     )
 

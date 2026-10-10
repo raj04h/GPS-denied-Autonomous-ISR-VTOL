@@ -1,0 +1,24 @@
+
+# Tracking layer configuration
+
+tracker:
+  backend: botsort
+  fps: 30.0
+
+  # BoT-SORT settings passed to the installed backend.
+  # Verify supported parameter names against your BoxMOT version.
+  parameters: {}
+
+trajectory:
+  max_points: 100
+
+input:
+  # P1 detection JSONL input
+  jsonl_path: "detection_output.jsonl"
+
+output:
+  # P2 tracking JSONL output
+  jsonl_path: "tracking_output.jsonl"
+
+logging:
+  level: INFO

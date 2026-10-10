@@ -1,11 +1,11 @@
 import math
 from typing import Any, Mapping
 
-from .track_types import Detection, FrameDetections
+from .tracking_types import Detection, FrameDetections
 
 
 def parse_frame_packet(record: Mapping[str, Any]) -> FrameDetections:
-    """Convert one valid P1 JSONL frame record into the P2 data contract."""
+    """Convert one P1 JSONL frame record into the P2 data contract."""
 
     if not isinstance(record, Mapping):
         raise TypeError("Frame record must be a mapping")
@@ -54,31 +54,47 @@ def parse_frame_packet(record: Mapping[str, Any]) -> FrameDetections:
 
     detections = []
 
+    required_detection_fields = (
+        "class_id",
+        "class_name",
+        "confidence",
+        "x1",
+        "y1",
+        "x2",
+        "y2",
+    )
+
     for index, item in enumerate(raw_detections):
         if not isinstance(item, Mapping):
-            raise ValueError(f"Detection at index {index} must be an object")
+            raise ValueError(
+                f"Detection at index {index} must be an object"
+            )
 
-        required_detection_fields = (
-            "class_id",
-            "class_name",
-            "confidence",
-            "x1",
-            "y1",
-            "x2",
-            "y2",
-        )
-
-        missing_detection_fields = [
+        missing_fields = [
             key for key in required_detection_fields if key not in item
         ]
-        if missing_detection_fields:
+
+        if missing_fields:
             raise ValueError(
-                f"Detection {index} missing fields: {missing_detection_fields}"
+                f"Detection {index} missing fields: {missing_fields}"
             )
+
+        class_id = item["class_id"]
+
+        if (
+            isinstance(class_id, bool)
+            or not isinstance(class_id, int)
+            or class_id < 0
+        ):
+            print(
+                f"WARNING: Skipping invalid detection at frame {frame_id}, "
+                f"detection index {index}: class_id={class_id!r}"
+            )
+            continue
 
         try:
             detection = Detection(
-                class_id=item["class_id"],
+                class_id=class_id,
                 class_name=item["class_name"],
                 confidence=item["confidence"],
                 x1=item["x1"],
@@ -87,7 +103,9 @@ def parse_frame_packet(record: Mapping[str, Any]) -> FrameDetections:
                 y2=item["y2"],
             )
         except (TypeError, ValueError) as exc:
-            raise ValueError(f"Invalid detection at index {index}: {exc}") from exc
+            raise ValueError(
+                f"Invalid detection at index {index}: {exc}"
+            ) from exc
 
         detections.append(detection)
 
