@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-10-29T13:03:51",
+  "purpose": "Timing characterization and synchronization readiness",
+  "strix": {
+    "source_file": "/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/data/strix/20261026_192110/raw_measurements.csv",
+    "sensor_timestamp": {
+      "sample_count": 3097,
+      "span_s": 61.919969,
+      "observed_rate_hz": 50.0,
+      "requested_rate_hz": 50,
+      "mean_interval_ms": 20.0,
+      "median_interval_ms": 20.001,
+      "min_positive_interval_ms": 17.045,
+      "max_interval_ms": 22.95,
+      "interval_stddev_ms": 1.648,
+      "intervals_over_100ms": 0,
+      "intervals_over_500ms": 0,
+      "nonpositive_intervals": 0,
+      "monotonic": true
+    },
+    "host_arrival_timestamp": {
+      "sample_count": 3097,
+      "span_s": 59.955103,
+      "observed_rate_hz": 51.639,
+      "requested_rate_hz": 50,
+      "mean_interval_ms": 19.365,
+      "median_interval_ms": 19.997,
+      "min_positive_interval_ms": 0.101,
+      "max_interval_ms": 24.102,
+      "interval_stddev_ms": 3.96,
+      "intervals_over_100ms": 0,
+      "intervals_over_500ms": 0,
+      "nonpositive_intervals": 0,
+      "monotonic": true
+    }
+  },
+  "realsense": {
+    "source_file": "/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/data/realsense/20261026_205357/raw_measurements.csv",
+    "streams": {
+      "rgb": {
+        "sensor_timestamp": {
+          "sample_count": 1787,
+          "span_s": 59.993567,
+          "observed_rate_hz": 29.77,
+          "requested_rate_hz": 30,
+          "mean_interval_ms": 33.591,
+          "median_interval_ms": 33.348,
+          "min_positive_interval_ms": 33.343,
+          "max_interval_ms": 100.036,
+          "interval_stddev_ms": 3.046,
+          "intervals_over_100ms": 1,
+          "intervals_over_500ms": 0,
+          "nonpositive_intervals": 0,
+          "monotonic": true
+        },
+        "host_arrival_timestamp": {
+          "sample_count": 1787,
+          "span_s": 59.993683,
+          "observed_rate_hz": 29.77,
+          "requested_rate_hz": 30,
+          "mean_interval_ms": 33.591,
+          "median_interval_ms": 33.34,
+          "min_positive_interval_ms": 29.873,
+          "max_interval_ms": 102.824,
+          "interval_stddev_ms": 3.217,
+          "intervals_over_100ms": 1,
+          "intervals_over_500ms": 0,
+          "nonpositive_intervals": 0,
+          "monotonic": true
+        }
+      },
+      "depth": {
+        "sensor_timestamp": {
+          "sample_count": 1781,
+          "span_s": 59.993567,
+          "observed_rate_hz": 29.67,
+          "requested_rate_hz": 30,
+          "mean_interval_ms": 33.704,
+          "median_interval_ms": 33.348,
+          "min_positive_interval_ms": 33.343,
+          "max_interval_ms": 100.054,
+          "interval_stddev_ms": 4.092,
+          "intervals_over_100ms": 4,
+          "intervals_over_500ms": 0,
+          "nonpositive_intervals": 0,
+          "monotonic": true
+        },
+        "host_arrival_timestamp": {
+          "sample_count": 1781,
+          "span_s": 59.993554,
+          "observed_rate_hz": 29.67,
+          "requested_rate_hz": 30,
+          "mean_interval_ms": 33.704,
+          "median_interval_ms": 33.345,
+          "min_positive_interval_ms": 28.322,
+          "max_interval_ms": 100.111,
+          "interval_stddev_ms": 4.176,
+          "intervals_over_100ms": 2,
+          "intervals_over_500ms": 0,
+          "nonpositive_intervals": 0,
+          "monotonic": true
+        }
+      }
+    },
+    "rgb_depth_timestamp_comparison": {
+      "method": "one-to-one timestamp pairing within half a nominal RGB frame period",
+      "pair_tolerance_ms": 16.667,
+      "rgb_count": 1787,
+      "depth_count": 1781,
+      "paired_count": 1779,
+      "unmatched_rgb_count": 8,
+      "unmatched_depth_count": 2,
+      "median_signed_offset_ms": 0.0481,
+      "median_absolute_offset_ms": 0.0481,
+      "p95_absolute_offset_ms": 0.0491,
+      "note": "Timestamp pairing is diagnostic, not proof of matching exposure time. Verify timestamp domains and frame metadata before treating these offsets as synchronization accuracy."
+    }
+  },
+  "cross_sensor_sync": {
+    "status": "NOT_ESTIMATED_FROM_SEPARATE_CAPTURE_SESSIONS",
+    "reason": "The uploaded Strix and RealSense logs are independent captures. Per-stream rates and host arrival intervals can be characterized, but these logs do not establish simultaneous IMU-camera timing, sensor clock offset, or drift. Capture both streams concurrently with a shared timing reference or validated clock mapping."
+  }
+}

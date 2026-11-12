@@ -1,0 +1,78 @@
+{
+  "status": "CAPTURE_REVIEWED_NO_CRITICAL_GAPS",
+  "elapsed_s": 60.026929,
+  "requested_rate_hz": 30,
+  "topics": {
+    "rgb": "/camera/camera/color/image_raw",
+    "depth": "/camera/camera/depth/image_rect_raw"
+  },
+  "streams": {
+    "rgb": {
+      "status": "CAPTURE_REVIEWED_NO_CRITICAL_GAPS",
+      "sample_count": 1787,
+      "observed_message_rate_hz": 29.753,
+      "sensor_timestamp": {
+        "positive_interval_count": 1786,
+        "mean_interval_ms": 33.591,
+        "median_interval_ms": 33.348,
+        "min_positive_interval_ms": 33.343,
+        "max_interval_ms": 100.036,
+        "interval_stddev_ms": 3.046,
+        "jitter_from_requested_period_ms": 0.258,
+        "intervals_over_100ms": 1,
+        "intervals_over_500ms": 0,
+        "monotonic": true,
+        "nonpositive_intervals": 0,
+        "first_to_last_span_s": 59.993567
+      },
+      "host_arrival_timestamp": {
+        "positive_interval_count": 1786,
+        "mean_interval_ms": 33.591,
+        "median_interval_ms": 33.34,
+        "min_positive_interval_ms": 29.873,
+        "max_interval_ms": 102.824,
+        "interval_stddev_ms": 3.217,
+        "jitter_from_requested_period_ms": 0.543,
+        "intervals_over_100ms": 1,
+        "intervals_over_500ms": 0,
+        "monotonic": true,
+        "nonpositive_intervals": 0,
+        "first_to_last_span_s": 59.993683
+      }
+    },
+    "depth": {
+      "status": "CAPTURE_REVIEWED_NO_CRITICAL_GAPS",
+      "sample_count": 1781,
+      "observed_message_rate_hz": 29.653,
+      "sensor_timestamp": {
+        "positive_interval_count": 1780,
+        "mean_interval_ms": 33.704,
+        "median_interval_ms": 33.348,
+        "min_positive_interval_ms": 33.343,
+        "max_interval_ms": 100.054,
+        "interval_stddev_ms": 4.092,
+        "jitter_from_requested_period_ms": 0.371,
+        "intervals_over_100ms": 4,
+        "intervals_over_500ms": 0,
+        "monotonic": true,
+        "nonpositive_intervals": 0,
+        "first_to_last_span_s": 59.993567
+      },
+      "host_arrival_timestamp": {
+        "positive_interval_count": 1780,
+        "mean_interval_ms": 33.704,
+        "median_interval_ms": 33.345,
+        "min_positive_interval_ms": 28.322,
+        "max_interval_ms": 100.111,
+        "interval_stddev_ms": 4.176,
+        "jitter_from_requested_period_ms": 0.677,
+        "intervals_over_100ms": 2,
+        "intervals_over_500ms": 0,
+        "monotonic": true,
+        "nonpositive_intervals": 0,
+        "first_to_last_span_s": 59.993554
+      }
+    }
+  },
+  "note": "ROS header timestamps and Jetson host-arrival timestamps are recorded separately. This report does not establish clock synchronization or exact sensor exposure time."
+}

@@ -1,0 +1,33 @@
+[0.566s] Invoking command in '/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/src/sensor_node': PYTHONPATH=/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_node build --build-base /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build install --record /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/install.log --install-scripts $base/lib/sensor_node --single-version-externally-managed install_data
+[0.759s] running egg_info
+[0.768s] writing ../../build/sensor_node/sensor_node.egg-info/PKG-INFO
+[0.769s] writing dependency_links to ../../build/sensor_node/sensor_node.egg-info/dependency_links.txt
+[0.769s] writing entry points to ../../build/sensor_node/sensor_node.egg-info/entry_points.txt
+[0.769s] writing requirements to ../../build/sensor_node/sensor_node.egg-info/requires.txt
+[0.769s] writing top-level names to ../../build/sensor_node/sensor_node.egg-info/top_level.txt
+[0.794s] reading manifest file '../../build/sensor_node/sensor_node.egg-info/SOURCES.txt'
+[0.795s] writing manifest file '../../build/sensor_node/sensor_node.egg-info/SOURCES.txt'
+[0.795s] running build
+[0.796s] running build_py
+[0.796s] copying sensor_node/timing/strix_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+[0.796s] copying sensor_node/timing/analyze_sensor_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+[0.796s] copying sensor_node/timing/realsense_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+[0.796s] running install
+[0.799s] running install_lib
+[0.812s] copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/strix_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+[0.812s] copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/analyze_sensor_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+[0.812s] copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/realsense_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+[0.812s] byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/strix_timing.py to strix_timing.cpython-310.pyc
+[0.814s] byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/analyze_sensor_timing.py to analyze_sensor_timing.cpython-310.pyc
+[0.815s] byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/realsense_timing.py to realsense_timing.cpython-310.pyc
+[0.816s] running install_data
+[0.816s] running install_egg_info
+[0.830s] removing '/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node-0.0.0-py3.10.egg-info' (and everything under it)
+[0.830s] Copying ../../build/sensor_node/sensor_node.egg-info to /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node-0.0.0-py3.10.egg-info
+[0.831s] running install_scripts
+[0.917s] Installing analyze_sensor_timing script to /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/sensor_node
+[0.918s] Installing concurrent_sensor_logger script to /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/sensor_node
+[0.918s] Installing realsense_timing script to /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/sensor_node
+[0.918s] Installing strix_timing script to /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/sensor_node
+[0.918s] writing list of installed files to '/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/install.log'
+[0.939s] Invoked command in '/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/src/sensor_node' returned '0': PYTHONPATH=/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_node build --build-base /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build install --record /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/install.log --install-scripts $base/lib/sensor_node --single-version-externally-managed install_data

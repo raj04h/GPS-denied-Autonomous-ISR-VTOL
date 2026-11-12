@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/sensor_node/sensor_node.egg-info
+writing ../../build/sensor_node/sensor_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/sensor_node/sensor_node.egg-info/dependency_links.txt
+writing requirements to ../../build/sensor_node/sensor_node.egg-info/requires.txt
+writing top-level names to ../../build/sensor_node/sensor_node.egg-info/top_level.txt
+writing manifest file '../../build/sensor_node/sensor_node.egg-info/SOURCES.txt'
+reading manifest file '../../build/sensor_node/sensor_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/sensor_node/sensor_node.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node
+copying sensor_node/__init__.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node
+creating /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+copying sensor_node/timing/__init__.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+copying sensor_node/timing/strix_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+copying sensor_node/timing/analyze_sensor_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+copying sensor_node/timing/realsense_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+copying sensor_node/timing/concurrent_sensor_logger.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing
+running install
+running install_lib
+creating /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node
+copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/__init__.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node
+creating /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/__init__.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/strix_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/analyze_sensor_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/realsense_timing.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+copying /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/build/lib/sensor_node/timing/concurrent_sensor_logger.py -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing
+byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/__init__.py to __init__.cpython-310.pyc
+byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/__init__.py to __init__.cpython-310.pyc
+byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/strix_timing.py to strix_timing.cpython-310.pyc
+byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/analyze_sensor_timing.py to analyze_sensor_timing.cpython-310.pyc
+byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/realsense_timing.py to realsense_timing.cpython-310.pyc
+byte-compiling /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node/timing/concurrent_sensor_logger.py to concurrent_sensor_logger.cpython-310.pyc
+running install_data
+creating /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/share/ament_index/resource_index/packages
+copying resource/sensor_node -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/share/ament_index/resource_index/packages
+copying package.xml -> /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/share/sensor_node
+running install_egg_info
+Copying ../../build/sensor_node/sensor_node.egg-info to /mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/install/sensor_node/lib/python3.10/site-packages/sensor_node-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/mnt/nvme0n1p6/HRaj_WS/Autonomous-ISR-VTOL/ros_WS/build/sensor_node/install.log'

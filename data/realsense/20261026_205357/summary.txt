@@ -1,0 +1,21 @@
+REALSENSE D455 TIMING CHARACTERIZATION
+======================================
+Status: CAPTURE_REVIEWED_NO_CRITICAL_GAPS
+Elapsed: 60.026929 seconds
+Requested rate: 30 Hz
+
+RGB STREAM
+Samples: 1787
+Observed rate: 29.753 Hz
+Status: CAPTURE_REVIEWED_NO_CRITICAL_GAPS
+sensor_timestamp: monotonic=True, mean_interval_ms=33.591, max_interval_ms=100.036, gaps_over_100ms=1, gaps_over_500ms=0
+host_arrival_timestamp: monotonic=True, mean_interval_ms=33.591, max_interval_ms=102.824, gaps_over_100ms=1, gaps_over_500ms=0
+
+DEPTH STREAM
+Samples: 1781
+Observed rate: 29.653 Hz
+Status: CAPTURE_REVIEWED_NO_CRITICAL_GAPS
+sensor_timestamp: monotonic=True, mean_interval_ms=33.704, max_interval_ms=100.054, gaps_over_100ms=4, gaps_over_500ms=0
+host_arrival_timestamp: monotonic=True, mean_interval_ms=33.704, max_interval_ms=100.111, gaps_over_100ms=2, gaps_over_500ms=0
+
+Header and host-arrival timestamps are separate measurements; this report does not prove clock synchronization.

@@ -1,0 +1,34 @@
+{
+  "status": "CAPTURE_REVIEWED_NO_CRITICAL_GAPS",
+  "sample_count": 3097,
+  "elapsed_s": 60.018412,
+  "requested_rate_hz": 50,
+  "observed_message_rate_hz": 51.584,
+  "sensor_timestamp": {
+    "positive_interval_count": 3096,
+    "mean_interval_ms": 20.0,
+    "median_interval_ms": 20.001,
+    "min_positive_interval_ms": 17.045,
+    "max_interval_ms": 22.95,
+    "interval_stddev_ms": 1.648,
+    "jitter_from_requested_period_ms": 1.17,
+    "intervals_over_100ms": 0,
+    "intervals_over_500ms": 0,
+    "monotonic": true
+  },
+  "host_arrival_timestamp": {
+    "positive_interval_count": 3096,
+    "mean_interval_ms": 19.365,
+    "median_interval_ms": 19.997,
+    "min_positive_interval_ms": 0.101,
+    "max_interval_ms": 24.102,
+    "interval_stddev_ms": 3.96,
+    "jitter_from_requested_period_ms": 1.931,
+    "intervals_over_100ms": 0,
+    "intervals_over_500ms": 0,
+    "monotonic": true
+  },
+  "sensor_nonpositive_intervals": 0,
+  "host_nonpositive_intervals": 0,
+  "note": "Host receive timestamps are software-observed arrival times. This report does not establish absolute clock synchronization or exact IMU acquisition time."
+}

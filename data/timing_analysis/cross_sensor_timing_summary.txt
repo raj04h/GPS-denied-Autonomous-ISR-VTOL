@@ -1,0 +1,8 @@
+CROSS-SENSOR TIMING ANALYSIS
+============================
+Strix samples: 3097
+RGB samples: 1787
+Depth samples: 1781
+RGB-depth analysis: one-to-one timestamp pairing within half a nominal RGB frame period
+IMU-camera offset/drift: NOT ESTIMATED (independent captures)
+Review JSON for detailed interval, gap, and timestamp results.

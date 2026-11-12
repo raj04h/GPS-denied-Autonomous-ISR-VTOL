@@ -1,0 +1,8 @@
+STRIX TIMING CHARACTERIZATION
+=============================
+Status: CAPTURE_REVIEWED_NO_CRITICAL_GAPS
+Samples: 3097
+Elapsed: 60.018412 seconds
+Observed rate: 51.584 Hz
+
+Detailed results: timing_report.json
