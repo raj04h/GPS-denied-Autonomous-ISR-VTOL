@@ -33,7 +33,7 @@ OUTPUT_ROOT = Path.home() / "concurrent_sensor_captures"
 # 3. Core Logic
 class ConcurrentSensorLogger(Node):
     def __init__(self):
-        super().__init__("concurrent_sensor_logger")
+        super().__init__("cohttps://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F5qsw9avx44o4e4l9z1v7.pngncurrent_sensor_logger")
         self.stop_event = threading.Event()
         self.capture_start_ns = time.monotonic_ns()
         self.capture_start_wall = datetime.now().astimezone().isoformat()
